@@ -7,7 +7,7 @@ const port=3000;
 //for parsing the data 
 app.use(express.json());
 // if it is in same folder
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname,'public');
 
 mongoose.connect('mongodb+srv://jayendrakumar:jayendrakumar@cluster0.washlax.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>console.log('Connnected to MongoDB'))
